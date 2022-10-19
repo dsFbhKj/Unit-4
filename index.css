@@ -1,0 +1,33 @@
+html{
+    background-color: darkorange;
+    text-align: center;
+    margin-top: 21rem;
+}
+h1 {
+    width: 20rem;
+    height: 21rem;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+@keyframes example {
+    0% {
+        background-color: red;
+        left: 5rem;
+        top: -24rem;
+    }
+
+    50% {
+        background-color: blue;
+        left: 20rem;
+        top: 21rem;
+    }
+
+    100% {
+        background-color: red;
+        left: 5rem;
+        top: 5px;
+    }
+}
