@@ -12,3 +12,11 @@ console.log(5 > 4)
 console.log("apple" > "appear")
 console.log("west" < "Went")
 console.log(2 == "12")
+
+//The stabdard form of "if" is as follows:
+if(conditional == true){
+    console.log('it was true');
+}
+
+x=4
+y=5
