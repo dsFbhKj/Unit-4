@@ -171,3 +171,46 @@ let weekends="closed"
 if(weekdays == "open" || weekends == "closed"){
     console.log("It's only open 9am to 5pm on weekdays");
 }
+
+let tvOn = true;
+let radioOn = true;
+let computerOn = false;
+
+if(tvOn && radioOn && computerOn){
+    //see if all threee things are on
+    alert(`You have too much on...
+        don't waste power`);
+}
+
+let x = true;
+let y = false;
+let z = true;
+if(x && !y && z){
+    console.log("Correct")
+    if(x && y && z){
+    console.log("Correct")}
+}
+
+let mapMissing = false;
+let noDirections = true;
+let gas = 10;
+
+//if you gave gas, all you need is a map
+//or directions. We can see if someone
+//won't make it 
+if(gas != 0 && (!mapMissing || !noDirections)){
+    alert(`The road trip is on!`);
+}
+
+let time = true;
+let games = true;
+let study = true;
+let breakfast = true;
+
+if( time && !games && study && breakfast){
+    console.log('Pass')
+} else if (time && games && study && breakfast){
+    console.log('Still Pass')
+}else{
+    console.log('Fail')
+}
