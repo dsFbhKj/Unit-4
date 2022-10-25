@@ -19,15 +19,43 @@ h1 {
         top: -24rem;
     }
 
-    50% {
+    15% {
         background-color: blue;
         left: 20rem;
         top: 21rem;
     }
 
-    100% {
+    30% {
         background-color: red;
         left: 5rem;
         top: 5px;
     }
+    45% {
+        background-color: red;
+        left: 5rem;
+        top: -24rem;
+    }
+
+    60% {
+        background-color: blue;
+        left: 20rem;
+        top: 21rem;
+    }
+
+    75% {
+        background-color: red;
+        left: 5rem;
+        top: 5px;
+    }
+    90% {
+        background-color: red;
+        left: 5rem;
+        top: 5px;
+    }
+    105% {
+        background-color: red;
+        left: 5rem;
+        top: 5px;
+    }
+
 }
