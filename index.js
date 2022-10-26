@@ -247,4 +247,13 @@ for(starting_Value; end_Condition; increment){
 }
 
 let f= 0; f<=9; f++
-console.log(f)
+console.log(f);
+
+for(let i = 1; i <= 5; i+=2){
+    console.log(`this has happened ${i} times`)
+}
+
+for(let i = 1; i<=5; i++){
+    console.log(`this has happened ${2*i+3} times`)
+}
+

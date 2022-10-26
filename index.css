@@ -21,16 +21,16 @@ h1 {
 
     15% {
         background-color: blue;
-        left: 20rem;
+        left: 30rem;
         top: 21rem;
     }
 
     30% {
         background-color: red;
-        left: 5rem;
-        top: 5px;
+        left: 35rem;
+        top: 35px;
     }
-    45% {
+    /* 45% {
         background-color: red;
         left: 5rem;
         top: -24rem;
@@ -56,6 +56,6 @@ h1 {
         background-color: red;
         left: 5rem;
         top: 5px;
-    }
+    } */
 
 }
