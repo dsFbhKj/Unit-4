@@ -227,10 +227,24 @@ if(value !== null && value != undefined){
 //Now with nullish we can just say this
 console.log(value ?? 'this is not defined');
 
+// let a = null;
+// let b = undefined;
+// let c = "";
+// let d = 'This is the last thing';
+
+// console.log(a ?? b ?? c ?? d);//""
+// console.log(a ?? b ?? d ?? c);//if you put d before c then it print what d contains because it prints the first non null value 
+
 let a = null;
 let b = undefined;
 let c = "";
-let d = 'This is the last thing';
+let d = 'last thing';
 
-console.log(a ?? b ?? c ?? d);//""
-console.log(a ?? b ?? d ?? c);//if you put d before c then it print what d contains because it prints the first non null value 
+console.log(a || b || c || d);//"last thing"
+
+for(starting_Value; end_Condition; increment){
+    //code that will be looped
+}
+
+let f= 0; f<=9; f++
+console.log(f)
