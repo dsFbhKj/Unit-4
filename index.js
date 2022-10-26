@@ -257,3 +257,11 @@ for(let i = 1; i<=5; i++){
     console.log(`this has happened ${2*i+3} times`)
 }
 
+let i =0; //we have i already declared and assigned
+for(; i<3; i++){//no need for "begin"
+    console.log(i);//0,1,2
+}
+
+for(;;){
+    //repeats without limits
+}
