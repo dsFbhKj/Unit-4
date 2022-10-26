@@ -265,3 +265,15 @@ for(; i<3; i++){//no need for "begin"
 for(;;){
     //repeats without limits
 }
+
+for(let i = 5; i <= 11; i+=1){
+    console.log(`this has happened ${i} times`)
+}
+
+for(let i = 1; i <= 9; i++){
+    console.log(`this is nice`)
+}
+
+for(let i = 11; i >= 0; i-=2){
+    console.log(`this has happened ${i} times`)
+}
