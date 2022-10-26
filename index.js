@@ -214,3 +214,23 @@ if( time && !games && study && breakfast){
 }else{
     console.log('Fail')
 }
+
+//orginally we would say 
+let value = undefined;
+console.log(value ?? 'this is not defined')
+
+if(value !== null && value != undefined){
+    console.log(value);
+}else{
+    console.log("this is undefined");
+}
+//Now with nullish we can just say this
+console.log(value ?? 'this is not defined');
+
+let a = null;
+let b = undefined;
+let c = "";
+let d = 'This is the last thing';
+
+console.log(a ?? b ?? c ?? d);//""
+console.log(a ?? b ?? d ?? c);//if you put d before c then it print what d contains because it prints the first non null value 
