@@ -266,14 +266,59 @@ for(;;){
     //repeats without limits
 }
 
-for(let i = 5; i <= 11; i+=1){
-    console.log(`this has happened ${i} times`)
-}
+// for(let i = 5; i <= 11; i+=1){
+//     console.log(`this has happened ${i} times`)
+// }
 
 for(let i = 1; i <= 9; i++){
     console.log(`this is nice`)
 }
 
-for(let i = 11; i >= 0; i-=2){
-    console.log(`this has happened ${i} times`)
+for(let i= 1; i <  Math.floor(Math.random() * 20)``; i++){
+    console.log(Math.random(i*2))
+}
+
+while(condition){
+    //code
+    //called "body"
+}
+
+let t = 0;
+while(t < 3){// shows 0, then 1, than 2
+    console.log(t);
+    t++; 
+}
+
+let w = 5;
+while(w){
+    //when w becomes 0, the condition become falsy,
+    //and the loop stops
+    alert(w);
+    w--;
+}
+
+let q =0;
+do{
+    console.log(q)
+    q++;
+}while (q < 3);
+
+for (var o = 0; o < 20; o++) {
+    var count = 0;
+    for (var o = 0; o < Math.floor(Math.random() * 20); o++) {
+        count++;
+    }
+    console.log(count);
+}
+
+for (var k = 0; k < 20; k++) {
+    var count = 0;
+    var loopEnd = Math.floor(Math.random() * 20 + 1);
+    for (var k = 0; k < loopEnd; k++) {
+        count++;
+    }
+    console.log(count);
+}
+for (var j = 0; j < Math.floor(Math.random() * 20); j++) {
+    count++;
 }
