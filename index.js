@@ -246,8 +246,8 @@ for(starting_Value; end_Condition; increment){
     //code that will be looped
 }
 
-let f= 0; f<=9; f++
-console.log(f);
+let u= 0; u<=9; u++
+console.log(u);
 
 for(let i = 1; i <= 5; i+=2){
     console.log(`this has happened ${i} times`)
@@ -274,8 +274,9 @@ for(let i = 1; i <= 9; i++){
     console.log(`this is nice`)
 }
 
-for(let i= 1; i <  Math.floor(Math.random() * 20)``; i++){
-    console.log(Math.random(i*2))
+for(let i= 0; i <  6; i++){
+    let i = Math.floor(Math.random() * 10) + 1;
+    console.log(i)
 }
 
 while(condition){
@@ -311,10 +312,10 @@ for (var o = 0; o < 20; o++) {
     console.log(count);
 }
 
-for (var k = 0; k < 10; k++) {
+for (var f = 0; f < 8; f++) {
     var count = 0;
-    var loopEnd = Math.floor(Math.random(6) * 20 + 6 /3 + 4 + 6);
-    for (var k = 0; k < loopEnd; k++) {
+    var loopEnd = M0ath.floor(Math.random() * 10);
+    for (var f = 0; f < loopEnd; f++) {
         count++;
     }
     console.log(count);
@@ -333,3 +334,10 @@ for (var j = 0; j < Math.floor(Math.random() * 20); j++) {
 //     default:
 //         ...[break]
 // }
+
+var arr = [];
+while(arr.length < 6){
+    var r = Math.floor(Math.random() * 10) + 1;
+    if(arr.indexOf(r) === -1) arr.push(r);
+}
+console.log(arr);
