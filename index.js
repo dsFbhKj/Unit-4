@@ -311,9 +311,9 @@ for (var o = 0; o < 20; o++) {
     console.log(count);
 }
 
-for (var k = 0; k < 20; k++) {
+for (var k = 0; k < 10; k++) {
     var count = 0;
-    var loopEnd = Math.floor(Math.random() * 20 + 1);
+    var loopEnd = Math.floor(Math.random(6) * 20 + 6 /3 + 4 + 6);
     for (var k = 0; k < loopEnd; k++) {
         count++;
     }
@@ -322,3 +322,14 @@ for (var k = 0; k < 20; k++) {
 for (var j = 0; j < Math.floor(Math.random() * 20); j++) {
     count++;
 }
+
+// switch (x) {
+//     case 'value1':
+//     //if (x === 'value1')
+//     ...[break]
+//     case 'value2':
+//     //if (x === 'value2')
+//     ...[break]
+//     default:
+//         ...[break]
+// }
