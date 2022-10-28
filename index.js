@@ -360,3 +360,7 @@ console.log(box1,box2,box3,box4,box5)
 
 arrray = ['red', 'orange' , 'yellow', 'green'];
 console.log(array.length);//returns the value 4; it start counting at 1
+
+array= ['red', 'orange', 'yellow' , 'green'];
+array.length = 2;
+console.log(array);//'red', 'orange'
