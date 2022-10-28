@@ -355,7 +355,10 @@ let box2 = [2,3,6,7,10,11,14,15,18,19,22,23,26,27,30,31]
 let box3 = [4,5,6,7,12,13,14,15,20,21,22,23,18,29,30,31]
 let box4 = [8,9,10,11,12,13,14,15,24,25,26,27,28,29,30,31]
 let box5 = [16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]
-console.table(box1,box2,box3,box4,box5)
+for(let i = 0; i < box1.length; i++){
+    box1[i] *=3;
+}
+// console.table(box1,box2,box3,box4,box5)
 console.log(box1,box2,box3,box4,box5)
 
 arrray = ['red', 'orange' , 'yellow', 'green'];
@@ -367,7 +370,11 @@ console.log(array);//'red', 'orange'
 
 for(let i = 0; i < array.length; i++){}
 //This is the standard way od doing it. It is effective code and gives great understanding to others
-for(let item of array){}
+for(let item of array){}//represents each #; item doesn't exist without the for; has no impact in the for loop; item can't be used as the number in the for just use for.
 //This the monderen way of handling it and is an accepted way of handling looping
 for(let i in array){}
 //Don't use this, it only uses numerical values
+
+for(let i = 0; i < array.length; i++){
+    array[i] *=3;
+}
