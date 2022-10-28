@@ -341,3 +341,22 @@ while(arr.length < 6){
     if(arr.indexOf(r) === -1) arr.push(r);
 }
 console.log(arr);
+
+array = ['red', 'orange', 'yellow' , 'green'];
+array[0]//red;
+array[3]//green;
+array[2]//is yelloe
+array[2] = 'pink';
+//array = ['red', 'orange' , 'pink', 'green'];
+console.log(array);
+
+let box1 = [1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31]
+let box2 = [2,3,6,7,10,11,14,15,18,19,22,23,26,27,30,31]
+let box3 = [4,5,6,7,12,13,14,15,20,21,22,23,18,29,30,31]
+let box4 = [8,9,10,11,12,13,14,15,24,25,26,27,28,29,30,31]
+let box5 = [16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]
+console.table(box1,box2,box3,box4,box5)
+console.log(box1,box2,box3,box4,box5)
+
+arrray = ['red', 'orange' , 'yellow', 'green'];
+console.log(array.length);//returns the value 4; it start counting at 1
