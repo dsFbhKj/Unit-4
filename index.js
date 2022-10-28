@@ -364,3 +364,10 @@ console.log(array.length);//returns the value 4; it start counting at 1
 array= ['red', 'orange', 'yellow' , 'green'];
 array.length = 2;
 console.log(array);//'red', 'orange'
+
+for(let i = 0; i < array.length; i++){}
+//This is the standard way od doing it. It is effective code and gives great understanding to others
+for(let item of array){}
+//This the monderen way of handling it and is an accepted way of handling looping
+for(let i in array){}
+//Don't use this, it only uses numerical values
