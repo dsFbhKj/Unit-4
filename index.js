@@ -355,11 +355,12 @@ let box2 = [2,3,6,7,10,11,14,15,18,19,22,23,26,27,30,31]
 let box3 = [4,5,6,7,12,13,14,15,20,21,22,23,18,29,30,31]
 let box4 = [8,9,10,11,12,13,14,15,24,25,26,27,28,29,30,31]
 let box5 = [16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]
-for(let i = 0; i < box1.length; i++){
-    box1[i] *=3;
+for(let i = 1; i < box1.length; i++){
+     box1[i].toString(2);//di this to everyone and nest the for loops for each box
 }
 // console.table(box1,box2,box3,box4,box5)
 console.log(box1,box2,box3,box4,box5)
+
 
 arrray = ['red', 'orange' , 'yellow', 'green'];
 console.log(array.length);//returns the value 4; it start counting at 1
@@ -378,3 +379,6 @@ for(let i in array){}
 for(let i = 0; i < array.length; i++){
     array[i] *=3;
 }
+// for(let i = 0; i < box1.length; i++){
+//     box1[i] *=3;
+// }
