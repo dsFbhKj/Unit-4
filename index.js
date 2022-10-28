@@ -357,6 +357,18 @@ let box4 = [8,9,10,11,12,13,14,15,24,25,26,27,28,29,30,31]
 let box5 = [16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]
 for(let i = 1; i < box1.length; i++){
      box1[i].toString(2);//di this to everyone and nest the for loops for each box
+     for(let i = 1; i < box2.length; i++){
+        box2[i].toString(2);
+     }
+     for(let i = 1; i < box3.length; i++){
+        box3[i].toString(2);
+     }
+     for(let i = 1; i < box4.length; i++){
+        box4[i].toString(2);
+     }
+     for(let i = 1; i < box5.length; i++){
+        box5[i].toString(2);
+     }
 }
 // console.table(box1,box2,box3,box4,box5)
 console.log(box1,box2,box3,box4,box5)
