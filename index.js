@@ -394,3 +394,27 @@ for(let i = 0; i < array.length; i++){
 // for(let i = 0; i < box1.length; i++){
 //     box1[i] *=3;
 // }
+function functionName(parameters){
+    //function body
+}
+
+// function Add (a,b);
+// return (a+b);
+
+// function slope (mx,b);
+// return (mx+b);
+
+// function slope (a,b)
+// console.log(slope)
+
+function showMessage(from, text) {//arguments: from, text
+    console.log(from + ': ' + text);
+}
+
+showMessage('Anne', 'Hello!');//Anne: Hello! (*)
+showMessage('Anne', "What's up?")// Anne: What's up (**)
+
+function thirteen(a){
+    console.log([a]*4 + 13);
+}
+thirteen(4);
