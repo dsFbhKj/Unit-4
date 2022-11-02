@@ -1,5 +1,5 @@
 html{
-    background-color: darkorange;
+    background-color: rgb(0, 255, 26);
     text-align: center;
     margin-top: 21rem;
 }
@@ -58,4 +58,21 @@ h1 {
         top: 5px;
     } */
 
+}
+
+button{
+    background-color: darkorange;
+    left: 10rem;
+    top: 10rem;
+    width: 5rem;
+    height: 5rem;
+    border: none;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 2rem;
+    cursor: pointer;
+    border-radius: 25%;
 }

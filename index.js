@@ -415,6 +415,29 @@ showMessage('Anne', 'Hello!');//Anne: Hello! (*)
 showMessage('Anne', "What's up?")// Anne: What's up (**)
 
 function thirteen(a){
-    console.log([a]*4 + 13);
+    // document.getElementById('description').text = 'Georgie is cool'
+    document.getElementById('description').innerHTML = 'Javascript is challenging'
+    document.getElementById('description').style.color = 'blue'
+    document.getElementById('img').src = 'love.png'
+
+    for(let a= 0; a <  6; a++){ // I put i as 0 and set a limit to 6 that would loop
+    let a = Math.floor(Math.random() * 10) + 1; // Then I did Math.floor and Math.random so I and get a randomzied whole number *10 and then add the whole thing but 1
+    console.log(a)//print out my numbers
+}
+    // console.log([a]*4 + 13);
 }
 thirteen(4);
+
+const str = 'The quick brown fox jumps over the lazy dog.';
+
+const words = str.split(' ');
+console.log(words[3]);
+// expected output: "fox"
+
+const chars = str.split('');
+console.log(chars[8]);
+// expected output: "k"
+
+const strCopy = str.split();
+console.log(strCopy);
+// expected output: Array ["The quick brown fox jumps over the lazy dog."]
