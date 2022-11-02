@@ -419,7 +419,7 @@ function thirteen(a){
     document.getElementById('description').innerHTML = 'Javascript is challenging'
     document.getElementById('description').style.color = 'blue'
     document.getElementById('img').src = 'love.png'
-
+    
     for(let a= 0; a <  6; a++){ // I put i as 0 and set a limit to 6 that would loop
     let a = Math.floor(Math.random() * 10) + 1; // Then I did Math.floor and Math.random so I and get a randomzied whole number *10 and then add the whole thing but 1
     console.log(a)//print out my numbers
@@ -441,3 +441,9 @@ console.log(chars[8]);
 const strCopy = str.split();
 console.log(strCopy);
 // expected output: Array ["The quick brown fox jumps over the lazy dog."]
+
+        // take the input from the user
+    let number = prompt('Enter the number: ');
+
+    let solved = Math.sqrt(number);
+    console.log(`The square root of ${number} is ${result}`);
