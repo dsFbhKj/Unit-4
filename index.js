@@ -447,3 +447,50 @@ console.log(strCopy);
 
     let solved = Math.sqrt(number);
     console.log(`The square root of ${number} is ${result}`);
+
+// function yourMessage(){
+//     //local variable 
+//     var message = ("Hello, I'm Javascript");
+//     console.log(message)
+// }
+// message("Hello, I'm Javascript");
+
+let username = 'John';
+
+function showMessage(){
+    username = 'Bob'; //(1) changed the outer var
+    let message = 'Hello, ' + username;
+    console.log(message);
+}
+console.log(username);//John befire the function call
+showMessage();
+console.log(username);//Bob, the value was modifeied by the function
+
+// let output = calcPower(3, 5); //output == 243
+
+function add(num1,num2){
+    return
+}
+add()
+
+function calcPower(base, power){
+    return base**power
+    // return (base**power)
+}
+console.log(calcPower(3,5))
+console.log(calcPower(9,7))
+
+function checkAge(age){
+    if (age >= 18){
+        return true;
+    }else {
+        return confirm('Do you have permission from your parents?');
+    }
+}
+let age = prompt('How old are you', 18);
+
+if (checkAge(age)){
+    alert('Access granted');
+}else{
+    alert('Access denied');
+}

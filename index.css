@@ -12,7 +12,7 @@ h1 {
     animation-duration: 4s;
 }
 
-@keyframes example {
+@keyframes example { 
     0% {
         background-color: red;
         left: 5rem;
@@ -29,8 +29,8 @@ h1 {
         background-color: red;
         left: 35rem;
         top: 35px;
-    }
-    /* 45% {
+    } 
+    45% {
         background-color: red;
         left: 5rem;
         top: -24rem;
@@ -56,9 +56,9 @@ h1 {
         background-color: red;
         left: 5rem;
         top: 5px;
-    } */
+    } 
 
-}
+ } 
 
 button{
     background-color: darkorange;
