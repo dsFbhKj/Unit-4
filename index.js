@@ -398,6 +398,32 @@ function functionName(parameters){
     //function body
 }
 
+    function checkAge(age) {
+        if (age >= 18) {
+            return true;
+        } else {
+            return confirm('Do you have permission from your parents?');
+        }
+    }
+    age = prompt('How old are you', 18);
+
+    if (checkAge(age)) {
+        alert('Access granted');
+    } else {
+        alert('Access denied');
+    }
+
+    let sum = 0;
+    let amount = 0;
+
+    while (true) {
+        let value = +prompt(`Eneter a test score: `, `leave blank if done`);
+        if (!value) break;
+        sum += value;
+        amount++
+        console.log(sum)
+    }
+
 // function Add (a,b);
 // return (a+b);
 
@@ -547,3 +573,11 @@ sum = (a, b) => {
 console.log(sum(3,5));
 
 "use strict"; //it cut of the flab and make sure it your code is right
+
+/* <input type='text' id='input'>
+    document.getElementById('input')  //HTML ; text to go in the box 
+</input>
+document.getElementById('input')
+document.getElementById('input').value; // save what ever they type in */
+
+document.getElementById('input').textContent = 'New Text'

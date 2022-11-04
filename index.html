@@ -14,33 +14,8 @@
     <button onclick="thirteen()"><strong>Click Me</strong></button>
     <img src="./download.png" alt="" id="img" width="300" height="300">
 
-    <script>
-    function checkAge(age) {
-        if (age >= 18) {
-            return true;
-        } else {
-            return confirm('Do you have permission from your parents?');
-        }
-    }
-    let age = prompt('How old are you', 18);
+    <input type='text' id='input'>document.getElementById('input')</input>
 
-    if (checkAge(age)) {
-        alert('Access granted');
-    } else {
-        alert('Access denied');
-    }
-
-    // let sum = 0;
-    // let amount = 0;
-
-    // while (true) {
-    //     let value = +prompt(`Eneter a test score: `, `leave blank if done`);
-    //     if (!value) break;
-    //     sum += value;
-    //     amount++
-    //     console.log(sum)
-    // }
-    </script>
-    <!-- <script src="./index.js"></script> -->
+    <script src="./index.js"></script>
 </body>
 </html>
