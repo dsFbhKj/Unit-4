@@ -510,3 +510,17 @@ function calcPower(num1, power){
 }
 
 calcPower(3,5);
+
+function sayHi(name, text){
+    console.log(sayHi(name,text)); //the same but in func
+}//declaration
+
+//recursion
+
+let sayHi = function(name,text){
+    console.log(sayHi(name,text)); //the same but in var of sorts
+}//expression
+
+//this works
+doStuff()
+function dostuff(){}
