@@ -494,3 +494,19 @@ if (checkAge(age)){
 }else{
     alert('Access denied');
 }
+
+function findMin(a, b, c){
+    return minimum = Math.min(a, b, c);
+}
+console.log(Math.min(12, 45, 2))
+
+function calcPower(num1, power){
+    for(let p = 0; p < power; p++){
+        console.log(num1**(p+1))
+    }
+
+    return num1**power
+
+}
+
+calcPower(3,5);
