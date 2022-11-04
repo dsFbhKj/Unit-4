@@ -524,3 +524,17 @@ let sayHi = function(name,text){
 //this works
 doStuff()
 function dostuff(){}
+
+// let sum = function(a, b){
+//     return a + b;
+// }// the statement has already been declared
+// //is the same as
+// let sum = (a, b) => a + b;
+// // let sum = (a, b) => {a + b};// for multiple lines of code
+
+sum = function(a, b){
+    return a + b;
+}
+//is the same as
+sum = (a, b) => a + b;
+// let sum = (a, b) => {a + b};
