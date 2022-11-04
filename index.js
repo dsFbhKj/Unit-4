@@ -527,7 +527,7 @@ function dostuff(){}
 
 // let sum = function(a, b){
 //     return a + b;
-// }// the statement has already been declared
+// }// the statement has already been declared, expression form
 // //is the same as
 // let sum = (a, b) => a + b;
 // // let sum = (a, b) => {a + b};// for multiple lines of code
@@ -535,6 +535,15 @@ function dostuff(){}
 sum = function(a, b){
     return a + b;
 }
-//is the same as
+//is the same as, the expression form
 sum = (a, b) => a + b;
 // let sum = (a, b) => {a + b};
+
+sum = (a, b) => {
+    let result = a + b; //these are the expresssion form
+    return result
+}
+
+console.log(sum(3,5));
+
+"use strict"; //it cut of the flab and make sure it your code is right
