@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Number Guessing Game</title>
+
+    <style>
+        html {
+            font-family: sans-serif;
+        }
+
+        body {
+            width: 50%;
+            max-width: 800px;
+            min-width: 480px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Guess The Number</h1>
+
+    <p>We have selected a random number between 1 - 10.
+        See if you can guess it.</p>
+
+    <div class="form">
+        <label for="guessField">Enter a guess: </label>
+        <input type="text" id="guessField" class="guessField">
+        <input type="submit" value="Submit guess" class="guessSubmit" id="submitguess">
+    </div>
+
+    <script type="text/javascript">
+
+    // random value generated
+    var y = Math.floor(Math.random() * 10 + 1);
+      
+    // counting the number of guesses
+    // made for correct Guess
+    var guess = 1;
+      
+    document.getElementById("submitguess").onclick = function(){
+      
+   // number guessed by user     
+   var x = document.getElementById("guessField").value;
+  
+   if(x == y)
+   {    
+       alert("CONGRATULATIONS!!! YOU GUESSED IT RIGHT IN "
+               + guess + " GUESS ");
+   }
+   else if(x > y) /* if guessed number is greater
+                   than actual number*/ 
+   {    
+       guess++;
+       alert("OOPS SORRY!! TRY A SMALLER NUMBER");
+   }
+   else
+   {
+       guess++;
+       alert("OOPS SORRY!! TRY A GREATER NUMBER")
+   }
+}
+    </script>
+    <script>
+         usestrict;
+        let randomNumber = ()=>{Math.floor(Math.random);document.getElementById('input').value}
+        let number = 24;
+            let guess = document.getElementById('text'); // <-- assign input
+            document.getElementById("submit").onclick = () => {
+                const value = guess.value; // <-- take value
+                if (value == GuessNumber) {
+                    document.getElementById("P").innerHTML = "Gift";
+                } else if (isNaN(value)) {
+                    document.getElementById("P").innerHTML = "It should be a number";
+                } else if (value > 11 || value < 0) {
+                    document.getElementById("P").innerHTML = "It is a number between 1 and 10. Not beyond 10 or below"
+
+                } else {
+                    document.getElementById("P").innerHTML = "Better luck next time";
+                }
+            }
+        // Initial setup of variables.
+        var lowerLimit = 1;
+        var upperLimit = 25;
+        var tries = 5;
+        var answer = Math.floor(Math.random() * (upperLimit - lowerLimit + 1)) + lowerLimit;
+        var guess = '';
+        var message = 'Guess a number between ' + lowerLimit + ' and ' + upperLimit + ':';
+
+        // Keep prompting the user for a guess until the game ends.
+        while (tries > 0) {
+            // Prompt the user for a guess.
+            guess = prompt(message, guess);
+
+            // If the cancel button was pushed, let the user know the game is ending and
+            // break out of the loop.
+            if (guess == null) {
+                alert('Quitting game now.');
+                break;
+            }
+            // If the guess is a number...
+            else if (isFinite(guess) && guess != '') {
+                // Make sure the guess is converted into a number.
+                guess = +guess;
+
+                // If the guess is less than the range let the user know.
+                if (guess < lowerLimit) {
+                    alert('Your guess should be no less than ' + lowerLimit + '.');
+                }
+                // If the guess is greater than the range let the user know.
+                else if (guess > upperLimit) {
+                    alert('Your guess should be no greater than ' + upperLimit + '.');
+                }
+                // If the guess is too high let the user know.
+                else if (guess > answer) {
+                    alert('Your guess is too high.');
+                }
+                // If the guess is too low let the user know.
+                else if (guess < answer) {
+                    alert('Your guess is too low');
+                }
+                // If none of the other cases were true that means the answer must have
+                // been guessed so let the user know and break out of the loop.
+                else {
+                    alert('Great job, you got it!');
+                    break;
+                }
+            }
+            // If the guess is not a number, let the user know.
+            else {
+                alert('You must enter a number as a guess.');
+            }
+
+            tries = tries - 1;
+        }
+
+        if (tries == 0) {
+            alert('You ran out of tries.  The number was ' + answer + '.');
+        }
+
+    </script>
+</body>
+
+</html>
