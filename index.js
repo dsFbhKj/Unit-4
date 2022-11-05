@@ -1,3 +1,5 @@
+usestrict;  //it cut out the flab and make sure it your code is right
+
 // alert(2==2) //true
 
 // alert(5>5)//false
@@ -11,10 +13,10 @@ console.log("w" == "W")
 console.log(5 > 4)
 console.log("apple" > "appear")
 console.log("west" < "Went")
-console.log(2 == "12")
+console.log(2 == "12")//not defined
 
-//The stabdard form of "if" is as follows:
-conditional=true;
+//The standard form of "if" is as follows:
+let conditional=true;
 
 if(conditional == true){
     console.log('it was true');
@@ -37,7 +39,7 @@ else{
     console.log('FALSE')
 }
 
-year=2022;
+let year=2022;
 
 if (year == 2022){
     console.log('Its still this year');
@@ -50,8 +52,8 @@ else{
 }
 
 // let result = (condition) ? value1 : value2; -layout
-score= 89;
-age= 34;
+let score= 89;
+age = 34;
 let result = (score) ? true : false;
 let canDrink = (age >= 21) ? true : false;
 console.log(result)
@@ -543,7 +545,7 @@ function sayHi(name, text){
 
 //recursion
 
-let sayHi = function(name,text){
+sayHi = function(name,text){
     console.log(sayHi(name,text)); //the same but in var of sorts
 }//expression
 
@@ -572,12 +574,11 @@ sum = (a, b) => {
 
 console.log(sum(3,5));
 
-"use strict"; //it cut of the flab and make sure it your code is right
-
 /* <input type='text' id='input'>
     document.getElementById('input')  //HTML ; text to go in the box 
 </input>
 document.getElementById('input')
 document.getElementById('input').value; // save what ever they type in */
+// document.getElementById('input').textContent = 'New Text'
 
-document.getElementById('input').textContent = 'New Text'
+document.getElementById('input').value = 'New Text'
