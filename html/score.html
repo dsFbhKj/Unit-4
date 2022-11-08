@@ -23,7 +23,15 @@ html{
         <p>Best Streak = <span id="best"></span></p>
     </form>
     <script>
-        // usestrict;
+        usestrict;
+        for (var f = 0; f < 6; f++) {
+                var count = 0;
+                var loopEnd = Math.floor(Math.random() * 10) + 1;
+                for (var f = 0; f < loopEnd; f++) {
+                    count++;
+                }
+                console.log(count);
+            }
         // let randomNumber = ()=>{Math.floor(Math.random);document.getElementById('input').value}
         // let number = 24;
         //     let guess = document.getElementById('text'); // <-- assign input

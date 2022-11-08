@@ -6,8 +6,8 @@ usestrict;  //it cut out the flab and make sure it your code is right
 
 // alert(4<=5)//true
 
-console.log("w" < "W")
 console.log("w" > "W")
+console.log("W" > "w")
 console.log("w" == "W")
 
 console.log(5 > 4)
@@ -96,19 +96,19 @@ default: //else
 // your code here
 }
 
-// myVal= 13
+myVal= 13
 
-// switch (true){//will always run
-//     case (myVal >= 10):
-//         multiplier = 2;
-//         break;
-//     case(myVal >=0):
-//         multiplier = 1;
-//         break;
-//     default:
-//         multiplier = -1;
-// }
-// console.log(myVal)
+switch (true){//will always run
+    case (myVal >= 10):
+        multiplier = 2;
+        break;
+    case(myVal >=0):
+        multiplier = 1;
+        break;
+    default:
+        multiplier = -1;
+}
+console.log(multiplier)
 
 //question
 
@@ -127,10 +127,10 @@ default: //else
 
 //correct answer-in switch statement
 
-let message;
-let login = "Empolyee"
+let message="";
+let login = "Empolyee";
 switch (login){
-    case('Employee'):
+    case("Empolyee"):
     message = 'Hello';
     break;
     case('Director'):
@@ -139,11 +139,11 @@ switch (login){
     case(''):
     message = 'No login';
     break;
-
-default:
-    break;
+    default:
+        console.log(false)
+        break;
 }
-console.log(login)
+console.log(message)
 
 //OR statement
 alert( true || true); //true
@@ -182,6 +182,8 @@ if(tvOn && radioOn && computerOn){
     //see if all threee things are on
     alert(`You have too much on...
         don't waste power`);
+}else{
+    console.log('You have the right amount of power')
 }
 
 let x = true;
@@ -190,7 +192,7 @@ let z = true;
 if(x && !y && z){
     console.log("Correct")
     if(x && y && z){
-    console.log("Correct")}
+    console.log("InCorrect")}
 }
 
 let mapMissing = false;
@@ -248,7 +250,7 @@ for(starting_Value; end_Condition; increment){
     //code that will be looped
 }
 
-let u= 0; u<=9; u++
+for(let u= 0; u<=9; u++)
 console.log(u);
 
 for(let i = 1; i <= 5; i+=2){
@@ -306,24 +308,21 @@ do{
     q++;
 }while (q < 3);
 
-for (var o = 0; o < 20; o++) {
+for (var o = 0; o < 6; o++) {
     var count = 0;
-    for (var o = 0; o < Math.floor(Math.random() * 20); o++) {
+    for (var o = 0; o < Math.floor(Math.random() * 10) + 1; o++) {
         count++;
     }
-    console.log(count);
+    console.log(o);
 }
 
-for (var f = 0; f < 8; f++) {
+for (var f = 0; f < 6; f++) {
     var count = 0;
-    var loopEnd = M0ath.floor(Math.random() * 10);
+    var loopEnd = Math.floor(Math.random() * 10) + 1;
     for (var f = 0; f < loopEnd; f++) {
         count++;
     }
     console.log(count);
-}
-for (var j = 0; j < Math.floor(Math.random() * 20); j++) {
-    count++;
 }
 
 // switch (x) {
@@ -347,7 +346,7 @@ console.log(arr);
 array = ['red', 'orange', 'yellow' , 'green'];
 array[0]//red;
 array[3]//green;
-array[2]//is yelloe
+array[2]//is yellow;
 array[2] = 'pink';
 //array = ['red', 'orange' , 'pink', 'green'];
 console.log(array);
@@ -357,26 +356,26 @@ let box2 = [2,3,6,7,10,11,14,15,18,19,22,23,26,27,30,31]
 let box3 = [4,5,6,7,12,13,14,15,20,21,22,23,18,29,30,31]
 let box4 = [8,9,10,11,12,13,14,15,24,25,26,27,28,29,30,31]
 let box5 = [16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]
-for(let i = 0; i < box1.length; i++){
-     box1[i].toString(2);//di this to everyone and nest the for loops for each box
-     for(let j = 0; j < box2.length; j++){
-        box2[j=box2.toString(2)];
-     }
-     for(let j = 0; j < box3.length; j++){
-        box3[j=box3.toString(2)];
-     }
-     for(let j = 0; j < box4.length; j++){
-        box4[j=box4.toString(2)];
-     }
-     for(let j = 0; j < box5.length; j++){
-        box5[j=box5.toString(2)];
-     }
-}
+// for(let i = 0; i < box1.length; i++){
+//      box1[i].toString(2);//di this to everyone and nest the for loops for each box
+//      for(let j = 0; j < box2.length; j++){
+//         box2[j=box2.toString(2)];
+//      }
+//      for(let j = 0; j < box3.length; j++){
+//         box3[j=box3.toString(2)];
+//      }
+//      for(let j = 0; j < box4.length; j++){
+//         box4[j=box4.toString(2)];
+//      }
+//      for(let j = 0; j < box5.length; j++){
+//         box5[j=box5.toString(2)];
+//      }
+// }
 // console.table(box1,box2,box3,box4,box5)
 console.log(box1,box2,box3,box4,box5)
 console.log([i,j].toString)
 
-arrray = ['red', 'orange' , 'yellow', 'green'];
+array = ['red', 'orange' , 'yellow', 'green'];
 console.log(array.length);//returns the value 4; it start counting at 1
 
 array= ['red', 'orange', 'yellow' , 'green'];
@@ -384,7 +383,7 @@ array.length = 2;
 console.log(array);//'red', 'orange'
 
 for(let i = 0; i < array.length; i++){}
-//This is the standard way od doing it. It is effective code and gives great understanding to others
+//This is the standard way of doing things. It is effective code and gives great understanding to others. This method combine both methods.
 for(let item of array){}//represents each #; item doesn't exist without the for; has no impact in the for loop; item can't be used as the number in the for just use for.
 //This the monderen way of handling it and is an accepted way of handling looping
 for(let i in array){}
