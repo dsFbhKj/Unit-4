@@ -68,9 +68,14 @@ const colors = [
   "yellow",
 ];
 
+// let newArray = colors.map((index) => {
+//   {color, index;}
+// });
+
 let newArray = colors.map((index) => {
-  {color, index;}
+  {colors[0], index[0]} 
 });
+console.log(newArray)
 
 // Expected Outcome
 // [
