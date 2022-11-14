@@ -73,6 +73,7 @@ const colors = [
 // });
 
 let newArray = colors.map((index) => {
+  let colorsArray = [];
   {colors[0], index[0]} 
 });
 console.log(newArray)
