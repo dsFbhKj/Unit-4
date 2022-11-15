@@ -581,3 +581,18 @@ document.getElementById('input').value; // save what ever they type in */
 // document.getElementById('input').textContent = 'New Text'
 
 document.getElementById('input').value = 'New Text'
+
+//hoisting is like a call func; a set way func a rule then it refesnces the rule.
+add(2,4)
+function add(num1,num2){
+    return num1 + num2
+}
+console.log(add)
+
+let name = 'Georgiana'
+let fname = name.substring(3)//rgiana
+(0,7)//Georgia
+
+[2,4,6,8,10,1]//filter removes or aguments
+//.map lets you affecta a function to each one of them.
+
