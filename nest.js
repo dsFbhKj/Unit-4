@@ -8071,8 +8071,8 @@ console.log(antoni);
 
 // console.log(kaines);
 
-// people.map((firstName)=>{
-//   if(firstName.name == 'Antoni Walter'){
-//     console.log(firstName.age)
-//   }
-// })
+people.map((firstName)=>{
+  if(firstName.name == 'Antoni Walter'){
+    console.log(firstName.age)
+  }
+})

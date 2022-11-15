@@ -71,10 +71,12 @@ const colors = [
 // let newArray = colors.map((index) => {
 //   {color, index;}
 // });
-
+let colorsindex = 0
 let newArray = colors.map((index) => {
   let colorsArray = [];
-  {colors[0], index[0]} 
+  colorsArray.push({colors: index, index: colorsindex})
+  colorsindex++
+  return colorsArray;
 });
 console.log(newArray)
 
