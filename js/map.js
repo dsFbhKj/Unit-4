@@ -43,21 +43,14 @@ const people = [
   'Todd Chadwick: 81%',
 ];
 
-// people.map((person)=>{
-//     console.log("Names : " + people)
-// })
-// let answer = people.map((person)=>{
-//     let tempNameArray = [];
-//     tempNameArray.push (person)
-// })
-
 let peopleindex = 1
  let names = [];
 people.map((number) => {
   names.push({people: number, number: peopleindex})
-  peopleindex++
-  console.log(number.replaceAll('%','')) //Mrs.Bernard said I can leave the grade in however I still need to put the total #
+  // peopleindex++
+  peopleindex+=number
+  console.log(number.replaceAll('%','')) 
+  // console.log(names, number.replaceAll('%',''))//Mr.Bernard said I can leave the grade in however I still need to put the total #
 });
-console.log(names)
-// console.log(people.replaceAll('%'))
-// console.log(names(people.replaceAll('%','')))
+// console.log(names)
+console.log(peopleindex)

@@ -9,6 +9,9 @@ usestrict;  //it cut out the flab and make sure it your code is right
 console.log("w" > "W")
 console.log("W" > "w")
 console.log("w" == "W")
+console.log('ape' === 'app')
+console.log('ape' > 'app')
+console.log('ape' < 'app')
 
 console.log(5 > 4)
 console.log("apple" > "appear")
@@ -340,7 +343,7 @@ var arr = [];
 while(arr.length < 6){
     var r = Math.floor(Math.random() * 10) + 1;
     if(arr.indexOf(r) === -1) arr.push(r);
-}
+}//it's saying if it's not their add it to it.
 console.log(arr);
 
 array = ['red', 'orange', 'yellow' , 'green'];
@@ -495,10 +498,22 @@ console.log(username);//Bob, the value was modifeied by the function
 
 // let output = calcPower(3, 5); //output == 243
 
+//use return when it's a func that = a var
+
+//you should call a func when you need it
+
 function add(num1,num2){
-    return
+    return num1 + num2
 }
-add()
+let solution = add(5,3)
+console.log(solution)
+
+//when using return any num after that num won't be excuted
+
+function add(num1,num2){
+    return num1 + num2
+    console.log('Hi') //doesn't run hi because it's after the return
+}
 
 function calcPower(base, power){
     return base**power
@@ -550,7 +565,7 @@ sayHi = function(name,text){
 
 //this works
 doStuff()
-function dostuff(){}
+function dostuff(){}//hoisting
 
 // let sum = function(a, b){
 //     return a + b;
@@ -596,3 +611,87 @@ let fname = name.substring(3)//rgiana
 [2,4,6,8,10,1]//filter removes or aguments
 //.map lets you affecta a function to each one of them.
 
+if(0){console.log("Hello")
+}else{console.log("Good Bye")}
+//0=false,1=true
+
+for(let i =215; i>=176;i-=2)
+console.log(i);
+
+// switch(true){
+//     case(x>9):
+//     case(x<100):
+//     break;
+//     default: //else
+// }
+
+// document.getElementById(b).value
+// value = 1
+// value = 2
+// value = 3
+// onclick(b)//use for calcuator
+
+mum = [1,4,7,3,5]
+let answer =0
+for(let num of mum){
+    answer+=num
+}//for of -> array; for in -> objects
+//for in; for of; for each; and infinte for
+// map is an limit array and only happens once and goes through evrything in an array
+//map doesn't have to = a variable
+//map goes through ever var in array once and the var you put with rep each var in array.
+were = [1,2,3,4]
+let som = 0
+x.map((num)=>{
+    som+=num
+});
+console.log(som)
+
+// som = som+num
+// num+=4;
+// num+=num
+
+//do while
+// do{
+// //no matter what the do will excute even if the cond is false
+// }
+// while(cond+=);//has to excute
+
+// x = false
+// do{
+
+// }
+// while(w == true);
+
+// //while loop
+// x = false
+// while(cond){
+
+// }//never loop because it's false
+// will excute a bunch of times while true
+
+// people.map((person)=>{
+//     console.log("Names : " + people)
+// })
+// let answer = people.map((person)=>{
+//     let tempNameArray = [];
+//     tempNameArray.push (person)
+// })
+
+// console.log(people.replaceAll('%'))
+// console.log(names(people.replaceAll('%','')))
+
+//index of is an array method that gives you the location of what your searching for
+let names = ['Brad', 'Jenn', 'Ben', 'Jess', 'Matt']
+console.log(names.indexOf('Ben'))
+
+// console.log(people.replaceAll('%'))
+// console.log(names(people.replaceAll('%','')))
+//splice put in; for arrays
+//silpt takes nonarray to arrays 
+
+x = true ; y = true
+if(x && y);
+console.log(x,y)
+
+//to make a array back into a str use .join
