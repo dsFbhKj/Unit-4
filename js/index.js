@@ -16,20 +16,23 @@ console.log('ape' < 'app')
 console.log(5 > 4)
 console.log("apple" > "appear")
 console.log("west" < "Went")
+console.log("Went" < "West")
 console.log(2 == "12")//not defined
+
+
 
 //The standard form of "if" is as follows:
 let conditional=true;
 
-if(conditional == true){
-    console.log('it was true');
-}
-else{
-    console.log('it was false');
-}
+// if(conditional == true){
+//     console.log('it was true');
+// }
+// else{
+//     console.log('it was false');
+// }
 
-if(true)console.log('works');
-if(0)console.log('doesnt work');
+if(true)console.log('works')
+if(0)console.log('doesnt work')
 
 let check = 'false';
 if(check) console.log('this works too');
