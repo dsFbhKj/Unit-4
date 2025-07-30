@@ -451,7 +451,7 @@ function thirteen(a){
     // document.getElementById('description').text = 'Georgie is cool'
     document.getElementById('description').innerHTML = 'Javascript is challenging'
     document.getElementById('description').style.color = 'blue'
-    document.getElementById('img').src = 'love.png'
+    document.getElementById('img').src = '../images/love.png'
     
     for(let a= 0; a <  6; a++){ // I put i as 0 and set a limit to 6 that would loop
     let a = Math.floor(Math.random() * 10) + 1; // Then I did Math.floor and Math.random so I and get a randomzied whole number *10 and then add the whole thing but 1
